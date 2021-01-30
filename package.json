@@ -1,0 +1,50 @@
+{
+  "name": "pinball",
+  "version": "1.0.0",
+  "description": "pinball",
+  "main": "src/index.js",
+  "keywords": [
+    "Javascript",
+    "Threejs",
+    "Interactive",
+    "pinball",
+    "ES6"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iondrimba/pinball.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "author": "Ion D. Filho <iondrimba@gmail.com> (https://iondrimbafilho.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-core": "^6.7.0",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.6.1",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.3.2",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "chroma-js": "^2.1.0",
+    "matter-js": "^0.16.0",
+    "poly-decomp": "^0.3.0",
+    "stats.js": "^0.17.0",
+    "tweakpane": "^1.5.8"
+  }
+}
