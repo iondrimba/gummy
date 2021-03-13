@@ -1,3 +1,13 @@
 import App from './scripts/app';
 
-new App().init();
+try {
+  new App().init();
+
+  if (module.hot) {
+    module.hot.accept('./scripts/app', () => {
+      new App().init();
+    });
+  }
+} catch (error) {
+  console.log(error);
+}
